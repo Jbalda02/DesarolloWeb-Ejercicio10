@@ -11,17 +11,29 @@
 
 <body>
 
-    <h1 class="text-center">Enter Range</h1>
+    <h1 class="text-center">Enter ID to Modify</h1>
     <div class="d-flex flex-col justify-content-center align-items-center">
 
-    <form class="form-inline" action="/fotos/tablaByRange/result" method="GET">
+    <form class="form-inline" action="/fotos/updateForm/result" method="POST">
         <div class="form-group">
-            <label for="lower" class="sr-only mb-2 mt-2">Lower Value:</label>
-            <input type="text" class="form-control" id="lower" name="lower" required>
+            <label for="id_foto" class="sr-only mb-2 mt-2">ID Foto:</label>
+            <input type="text" class="form-control" id="id_foto" name="id_foto" required>
         </div>
         <div class="form-group">
-            <label for="higher" class="sr-only mb-2 mt-2">Higher Value:</label>
-            <input type="text" class="form-control" id="higher" name="higher" required>
+            <label for="titulo_foto" class="sr-only mb-2 mt-2">Titulo:</label>
+            <input type="text" class="form-control" id="titulo_foto" name="titulo_foto" required>
+        </div>
+        <div class="form-group">
+            <label for="descripcion_foto" class="sr-only mb-2 mt-2">Descripcion:</label>
+            <input type="text" class="form-control" id="descripcion_foto" name="descripcion_foto" required>
+        </div>
+        <div class="form-group">
+            <label for="ruta_foto" class="sr-only mb-2 mt-2">Ruta Foto:</label>
+            <input type="text" class="form-control" id="ruta_foto" name="ruta_foto" required>
+        </div>
+        <div class="form-group">
+            <label for="calificacion_foto" class="sr-only mb-2 mt-2">Calificacion Foto:</label>
+            <input type="text" class="form-control" id="calificacion_foto" name="calificacion_foto" required>
         </div>
 
         <button type="submit" class="btn btn-primary mb-2 mt-2">Submit</button>

@@ -1,11 +1,32 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Metodos GET</h1>
+        <div class="d-grid gap-2 col-6 mx-auto mt-4">
+            <!-- Button 1 -->
+            <a href="/fotos/tabla" class="btn btn-primary btn-lg">Todos</a>
+            <!-- Button 2 -->
+            <a href="/fotos/tablaByRange" class="btn btn-secondary btn-lg">Por Calificacion</a>
+            <!-- Button 3 -->
+            <a href="/fotos/tablaById" class="btn btn-success btn-lg">Por ID</a>
+            <!-- Button 4 -->
+    <h1 class="text-center">Otros Metodos</h1>
+
+        <a href="/fotos/saveForm" class="btn btn-primary btn-lg center">Nueva Imagen (POST)</a>
+        <a href="/fotos/updateForm" class="btn btn-secondary btn-lg center"> Modificar Imagen por Id (PUT) </a>
+        <a href="/fotos/deleteForm" class="btn btn-danger btn-lg center"> Eliminar Foto (DELETE) </a>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
 </html>
